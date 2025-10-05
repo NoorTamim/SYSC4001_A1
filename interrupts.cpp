@@ -73,7 +73,6 @@ int main(int argc, char** argv) {
 
                 //checking device status
                 int step2 = service_time - step1;
-                if (step2 < 0) step2 = 0;
                 execution += std::to_string(current_time) + ", " + std::to_string(step2) + ", check device status\n";
                 current_time += step2;
             }

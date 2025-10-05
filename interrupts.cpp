@@ -40,7 +40,7 @@ int main(int argc, char** argv) {
             int intr_num = duration_intr;
 
             // Boilerplate: switch to kernel, save context, find vector, load PC
-            auto [intr_log, new_time] = intr_boilerplate(current_time, intr_num, 10, vectors);  //changed the 10 to 20 or 30 for tests 1 to 20
+            auto [intr_log, new_time] = intr_boilerplate(current_time, intr_num, 10, vectors);  //changed the 10 to 20 or 30 for tests 1 to 10
             execution += intr_log;
             current_time = new_time;
 

@@ -1,0 +1,65 @@
+0, 5, CPU burst
+5, 1, switch to kernel mode
+6, 20, context saved
+26, 1, find vector 3 in memory position 0x0006
+27, 1, load address 0X042B into the PC
+28, 40, SYSCALL: run the ISR (device driver)
+68, 40, transfer data from device to memory
+108, 220, check for errors
+328, 1, IRET
+329, 5, CPU burst
+334, 1, switch to kernel mode
+335, 20, context saved
+355, 1, find vector 3 in memory position 0x0006
+356, 1, load address 0X042B into the PC
+357, 40, END_IO: run the ISR (device driver)
+397, 260, check device status
+657, 1, IRET
+658, 5, CPU burst
+663, 1, switch to kernel mode
+664, 20, context saved
+684, 1, find vector 5 in memory position 0x000A
+685, 1, load address 0X048B into the PC
+686, 40, SYSCALL: run the ISR (device driver)
+726, 40, transfer data from device to memory
+766, 131, check for errors
+897, 1, IRET
+898, 1, switch to kernel mode
+899, 20, context saved
+919, 1, find vector 5 in memory position 0x000A
+920, 1, load address 0X048B into the PC
+921, 40, END_IO: run the ISR (device driver)
+961, 171, check device status
+1132, 1, IRET
+1133, 5, CPU burst
+1138, 1, switch to kernel mode
+1139, 20, context saved
+1159, 1, find vector 7 in memory position 0x000E
+1160, 1, load address 0X00BD into the PC
+1161, 40, SYSCALL: run the ISR (device driver)
+1201, 40, transfer data from device to memory
+1241, 72, check for errors
+1313, 1, IRET
+1314, 1, switch to kernel mode
+1315, 20, context saved
+1335, 1, find vector 7 in memory position 0x000E
+1336, 1, load address 0X00BD into the PC
+1337, 40, END_IO: run the ISR (device driver)
+1377, 112, check device status
+1489, 1, IRET
+1490, 5, CPU burst
+1495, 1, switch to kernel mode
+1496, 20, context saved
+1516, 1, find vector 12 in memory position 0x0018
+1517, 1, load address 0X03B9 into the PC
+1518, 40, SYSCALL: run the ISR (device driver)
+1558, 40, transfer data from device to memory
+1598, 65, check for errors
+1663, 1, IRET
+1664, 1, switch to kernel mode
+1665, 20, context saved
+1685, 1, find vector 12 in memory position 0x0018
+1686, 1, load address 0X03B9 into the PC
+1687, 40, END_IO: run the ISR (device driver)
+1727, 105, check device status
+1832, 1, IRET
